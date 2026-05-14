@@ -1,4 +1,4 @@
 # KirbyCatSayo.github.io
-Website test
+BAD STINKY README
 
-this is where I add text right?
+NEVER USE GRRR
