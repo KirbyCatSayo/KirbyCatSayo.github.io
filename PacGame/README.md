@@ -15,7 +15,7 @@ Untested platforms that probably will still work
 
 Platforms that will NOT work
 - Mobile (No idea how you would port this python nightmare to a phone)
-- Web browser (no HTML support planned whatsoever)
+- Web browser (no HTML support planned whatsoever) (Lying)
 
 This is my first project and was coded VERY poorly, be careful when resizing the window, it can get very laggy and may not look right.
 Expect errors, crashes or freezes when making map sizes past 75,75 or 100,100.
