@@ -2,7 +2,7 @@ body {
   color: white;
   justify-items: center;
   text-align: center;
-  background-image: "sayoricute3d.webp";
+  background-image: url("sayoricute3d.webp");
 }
 h1 {
   color: pink;
