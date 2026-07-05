@@ -4,6 +4,8 @@ body {
   text-align: center;
   background-image: linear-gradient(black, white);
   background-image: url("img/IMAGE_DEPTH_EXTEND_MONO_SEAMLESS.png");
+  background-size: cover;
+  background-position: center;
 }
 h1 {
   color: pink;
