@@ -4,8 +4,16 @@ body {
   text-align: center;
   background-image: linear-gradient(black, white);
   background-image: url("img/IMAGE_DEPTH_EXTEND_MONO_SEAMLESS.png");
-  background-size: contain;
-  background-position: center;
+
+  /* Forces the image width and height to be exactly 100% of the screen */
+  background-size: 100% 100%; 
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  
+  /*background-size: contain;*/
+  /*background-position: center;*/
 }
 h1 {
   color: pink;
