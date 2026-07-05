@@ -1,5 +1,7 @@
 body {
   color: white;
+  background-image: linear-gradient(black, white);
+  background-image: url("/img/SayoriHouse.webp");
 }
 h1 {
   color: pink;
