@@ -11,6 +11,8 @@
 			margin: 0;
             display: flex;
             min-height: 100vh;       /* Takes 100% of viewport height */
+			justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */
     	}
         /* Responsive image constraints */
         /*img {*/
@@ -21,7 +23,10 @@
 </head>
 <body>
 	<div id="center">
-		<img alt="Noelle Holiday" class="Noelle" src="/img/noelle-holiday.gif">
+		<div class="Noelle" id="NoelleCenter">
+			<img alt="Noelle Holiday" class="noellegif" src="/img/noelle-holiday.gif" style="opacity: 0;">
+			<img alt="Noelle Holiday" class="noellestatic" src="/img/Noelle_Holiday_overworld.webp" style="opacity: 1;>
+		</div>
 	</div>
 	<style>
   		.Noelle {
@@ -29,11 +34,32 @@
     		max-width: 100%;
     		min-height: 320px;
     		max-height: 100%;
-			justify-content: center; /* Centers horizontally */
-            align-items: center;     /* Centers vertically */
     		position: relative;
     		color: black;
     		cursor: pointer;
   	}
-</style>
+	</style>
+	<script>
+		var noellewebsong = new Howl({
+    		src: ['/snd/midi-holiday-country.mp3'],
+    		volume: 0.5,
+    		loop: true
+  		});
+		
+		$(document).on('click', '.Noelle:not(.playing)', function() {
+    		noellewebsong.play();
+			
+    		$('.Noelle').addClass('playing');
+    		$('.noellestatic').css('opacity', 0);
+    		$('.noellegif').css('opacity', 1);
+  		});
+  	
+  		$(document).on('click', '.Noelle.playing', function() {
+    		noellewebsong.pause();
+			
+    		$('.Noelle').removeClass('playing');
+    		$('.noellestatic').css('opacity', 1);
+    		$('.noellegif').css('opacity', 0);
+  		});
+	</script>
 </body>
