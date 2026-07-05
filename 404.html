@@ -47,6 +47,8 @@
     		width: 100%;
     		object-fit: contain;
     		image-rendering: pixelated;
+			left: 0%;
+			right: 0%;
   		}
 	</style>
 	<script>
@@ -55,6 +57,8 @@
     		volume: 0.5,
     		loop: true
   		});
+
+		print(noellewebsong)
 		
 		$(document).on('click', '.Noelle:not(.playing)', function() {
     		noellewebsong.play();
