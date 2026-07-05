@@ -1,3 +1,6 @@
+html {
+  position: relative;
+}
 body {
   color: white;
   justify-items: center;
