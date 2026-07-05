@@ -2,6 +2,13 @@ body {
   color: white;
   background-image: linear-gradient(black, white);
   background-image: url("/img/SayoriHouse.webp");
+  
+  /* Forces the image width and height to be exactly 100% of the screen */
+  background-size: 100% 100%; 
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 h1 {
   color: pink;
