@@ -25,16 +25,16 @@
 	<script crossorigin="anonymous" integrity="sha512-yBpuflZmP5lwMzZ03hiCLzA94N0K2vgBtJgqQ2E1meJzmIBfjbb7k4Y23k2i2c/rIeSUGc7jojyIY5waK3ZxCQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
 	<script crossorigin="anonymous" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
 
-	<audio loop id="NoelleWebSong" src="/snd/midi-holiday-country.mp3"></audio>
+	<audio loop id="SpamWebSong" src="/snd/midi-spamton.mp3"></audio>
 	
 	<div id="center">
-		<div class="Noelle" id="NoelleCenter">
-			<img alt="Noelle Holiday" class="noellestatic" src="/img/Noelle_Holiday_overworld.webp" style="opacity: 1;">
-			<img alt="Noelle Holiday" class="noellegif" src="/img/noelle-holiday.gif" style="opacity: 0;">
+		<div class="Spamton" id="SpamtonCenter">
+			<img alt="Spamton" class="Spamtonstatic" src="/img/Spamton_G._Spamton.webp" style="opacity: 1;">
+			<img alt="Spamton" class="Spamtongif" src="/img/Spamton_overworld_dance.gif" style="opacity: 0;">
 		</div>
 	</div>
 	<style>
-  		.Noelle {
+  		.Spamton {
    			min-width: 320px;
     		max-width: 100%;
     		min-height: 320px;
@@ -43,7 +43,7 @@
     		color: black;
     		cursor: pointer;
   		}
-		.Noelle img {
+		.Spamton img {
     		position: absolute;
     		height: 100%;
     		width: 100%;
@@ -60,25 +60,22 @@
     	//	loop: true
   		//});
 
-		var noellewebsong = document.getElementById('NoelleWebSong');
-
-		console.log("IT ISNT WORKING!!")
-		console.log("what the hell bruhhh")
+		var noellewebsong = document.getElementById('SpamWebSong');
 		
-		$(document).on('click', '.Noelle:not(.playing)', function() {
+		$(document).on('click', '.Spamton:not(.playing)', function() {
     		noellewebsong.play();
 			
-    		$('.Noelle').addClass('playing');
-    		$('.noellestatic').css('opacity', 0);
-    		$('.noellegif').css('opacity', 1);
+    		$('.Spamton').addClass('playing');
+    		$('.Spamtonstatic').css('opacity', 0);
+    		$('.Spamtongif').css('opacity', 1);
   		});
   	
-  		$(document).on('click', '.Noelle.playing', function() {
+  		$(document).on('click', '.Spamton.playing', function() {
     		noellewebsong.pause();
 			
-    		$('.Noelle').removeClass('playing');
-    		$('.noellestatic').css('opacity', 1);
-    		$('.noellegif').css('opacity', 0);
+    		$('.Spamton').removeClass('playing');
+    		$('.Spamtonstatic').css('opacity', 1);
+    		$('.Spamtongif').css('opacity', 0);
   		});
 	</script>
 </body>
