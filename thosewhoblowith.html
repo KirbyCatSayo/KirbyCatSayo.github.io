@@ -1,1 +1,84 @@
+<!DOCTYPE HTML>
 
+<head>
+  	<title>deercheck</title>
+    <link rel="icon" type="image/x-icon" href="/img/NoelleIcon.ico">
+    <meta name="description" content="Navori website 404 page">
+	<link rel="stylesheet" href="/404p.css">
+	<style>
+    	body {
+    		background-color: black;
+			margin: 0;
+            display: flex;
+            min-height: 100vh;       /* Takes 100% of viewport height */
+			justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */
+    	}
+        /* Responsive image constraints */
+        /*img {*/
+            /*max-width: 100%;*/
+            /*height: auto;*/
+        /*}*/
+  	</style>
+</head>
+<body>
+	<script crossorigin="anonymous" integrity="sha512-yBpuflZmP5lwMzZ03hiCLzA94N0K2vgBtJgqQ2E1meJzmIBfjbb7k4Y23k2i2c/rIeSUGc7jojyIY5waK3ZxCQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
+	<script crossorigin="anonymous" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+	<audio loop id="NoelleWebSong" src="/snd/midi-holiday-country.mp3"></audio>
+	
+	<div id="center">
+		<div class="Noelle" id="NoelleCenter">
+			<img alt="Noelle Holiday" class="noellestatic" src="/img/Noelle_Holiday_overworld.webp" style="opacity: 1;">
+			<img alt="Noelle Holiday" class="noellegif" src="/img/noelle-holiday.gif" style="opacity: 0;">
+		</div>
+	</div>
+	<style>
+  		.Noelle {
+   			min-width: 320px;
+    		max-width: 100%;
+    		min-height: 320px;
+    		max-height: 100%;
+    		position: absolute;
+    		color: black;
+    		cursor: pointer;
+  		}
+		.Noelle img {
+    		position: absolute;
+    		height: 100%;
+    		width: 100%;
+    		object-fit: contain;
+    		image-rendering: pixelated;
+			left: 0%;
+			right: 0%;
+  		}
+	</style>
+	<script>
+		//var noellewebsong = new Howl({
+    	//	src: ['/snd/midi-holiday-country.mp3'],
+    	//	volume: 0.5,
+    	//	loop: true
+  		//});
+
+		var noellewebsong = document.getElementById('NoelleWebSong');
+
+		console.log("IT ISNT WORKING!!")
+		console.log("what the hell bruhhh")
+		
+		$(document).on('click', '.Noelle:not(.playing)', function() {
+    		noellewebsong.play();
+			
+    		$('.Noelle').addClass('playing');
+    		$('.noellestatic').css('opacity', 0);
+    		$('.noellegif').css('opacity', 1);
+  		});
+  	
+  		$(document).on('click', '.Noelle.playing', function() {
+    		noellewebsong.pause();
+			
+    		$('.Noelle').removeClass('playing');
+    		$('.noellestatic').css('opacity', 1);
+    		$('.noellegif').css('opacity', 0);
+  		});
+	</script>
+</body>
