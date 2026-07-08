@@ -1,0 +1,32 @@
+body {
+  color: white;
+  justify-items: center;
+  text-align: center;
+  background-image: linear-gradient(black, white);
+  background-image: url("/img/DDLCNotebook.webp");
+
+  /* Forces the image width and height to be exactly 100% of the screen */
+  background-size: 100% 100%; 
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  
+  /*background-size: contain;*/
+  /*background-position: center;*/
+}
+h1 {
+  color: pink;
+}
+span {
+  color: green;
+  background-color: black;
+}
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color: white;
+  height: 4px;
+}
