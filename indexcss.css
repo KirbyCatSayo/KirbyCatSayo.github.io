@@ -1,4 +1,5 @@
 body {
+  background-color: white;
   color: black;
   justify-items: center;
   text-align: center;
@@ -13,5 +14,6 @@ body {
   min-height: 100vh;
 }
 h1 {
+  background-color: white;
   color: pink;
 }
