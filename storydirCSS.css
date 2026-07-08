@@ -3,7 +3,7 @@ body {
   justify-items: center;
   text-align: center;
   background-image: linear-gradient(black, white);
-  background-image: url("/img/IMAGE_DEPTH.png");
+  background-image: url("/img/DDLCNotebook.webp");
 
   /* Forces the image width and height to be exactly 100% of the screen */
   background-size: 100% 100%; 
