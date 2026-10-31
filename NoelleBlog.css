@@ -1,3 +1,24 @@
+/* From noelle post */
+.header { display: flex; font-size: 36px; background: #EFBCE7; margin-top: 0; padding: 1rem; margin-bottom: 1rem; }
+
+.header .welcome { flex-grow: 1; max-width: 80%; object-fit: contain; }
+
+.header .ornament { flex-grow: 1; margin-left: 1rem; max-width: 20%; max-height: 100px; object-fit: contain; }
+
+.post { background: #EFBCE7; padding: 1rem; margin-bottom: 2rem; }
+
+.post p { margin-top: 0; }
+
+.post p:last-child { margin-bottom: 0; }
+
+.post .screenshot { image-rendering: pixelated; height: 32px; width: 32px; padding: 1rem; border: 2px inset white; }
+
+.post-footer { margin-top: 2rem; padding: 0.5rem 0; border-top: 1px dashed black; border-bottom: 1px dashed black; }
+
+.post-footer div:not(:first-child) { margin-top: 0.5rem; }
+
+.post-footer strong { margin-right: 0.25rem; }
+
 body {
   color: black;
   justify-items: left;
