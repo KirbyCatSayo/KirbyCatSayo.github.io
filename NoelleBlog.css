@@ -3,7 +3,7 @@
 
 .header .welcome { flex-grow: 1; max-width: 80%; object-fit: contain; }
 
-.header .ornament { flex-grow: 1; margin-left: 1rem; max-width: 20%; max-height: 100px; object-fit: contain; }
+.header .headersideimg { flex-grow: 1; margin-left: 1rem; max-width: 20%; max-height: 100px; object-fit: contain; }
 
 .post { background: #EFBCE7; padding: 1rem; margin-bottom: 2rem; }
 
