@@ -17,8 +17,8 @@ body {
   /*background-position: center;*/
 }
 h1 {
-  color: pink;
+  color: linear-gradient(pink, purple);
 }
 span {
-  color: D876DB;
+  color: black;
 }
