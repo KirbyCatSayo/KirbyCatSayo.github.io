@@ -19,6 +19,8 @@
 
 .post-footer strong { margin-right: 0.25rem; }
 
+.NavLink a {background: #7221db}
+
 body {
   color: black;
   justify-items: center;
