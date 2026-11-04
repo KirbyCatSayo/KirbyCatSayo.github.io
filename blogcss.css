@@ -1,4 +1,6 @@
 /* From noelle post*/
+html { position: relative; }
+
 .wrapper { width: 100%; max-width: 800px; }
 
 .header { display: flex; font-size: 36px; background: #2645C9; margin-top: 0; padding: 1rem; margin-bottom: 1rem; }
