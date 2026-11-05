@@ -1,0 +1,47 @@
+/* From noelle post*/
+.wrapper { width: 100%; max-width: 800px; }
+
+.header { display: flex; font-size: 36px; background: #ffffff; margin-top: 0; padding: 1rem; margin-bottom: 1rem; }
+
+.header .welcome { flex-grow: 1; max-width: 80%; object-fit: contain; }
+
+.header .headersideimg { flex-grow: 1; margin-left: 1rem; max-width: 20%; max-height: 100px; object-fit: contain; }
+
+.post { background: #2645C9; padding: 1rem; margin-bottom: 2rem; }
+
+.post p { margin-top: 0; }
+
+.post p:last-child { margin-bottom: 0; }
+
+.post .screenshot { image-rendering: pixelated; height: 32px; width: 32px; padding: 1rem; border: 2px inset white; }
+
+.post-footer { margin-top: 2rem; padding: 0.5rem 0; border-top: 1px dashed black; border-bottom: 1px dashed black; }
+
+.post-footer div:not(:first-child) { margin-top: 0.5rem; }
+
+.post-footer strong { margin-right: 0.25rem; }
+
+body {
+  color: black;
+  justify-items: left;
+  text-align: left;
+  background-image: linear-gradient(black, white);
+  background-image: url("/img/SnowfallBG.png"); background-color: #ffd5ef;
+
+  /* Forces the image width and height to be exactly 100% of the screen */
+  /*background-size: 100% 100%;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  */
+  
+  /*background-size: contain;*/
+  /*background-position: center;*/
+}
+h1 {
+  color: linear-gradient(pink, #9D25F5);
+}
+span {
+  color: black;
+}
