@@ -50,7 +50,7 @@ a { text-decoration: none; }
 
 .comment .author .user .icon { height: 16px; width: 16px; margin-right: 0.25rem; vertical-align: middle; }
 
-.comment .author .user.admin { color: #01620c; }
+.comment .author .user admin { color: #01620c; }
 
 .comment .comment-body { padding: 0.25rem 1rem; background-color: #ffd5ef; margin-bottom: 0.5rem; }
 
