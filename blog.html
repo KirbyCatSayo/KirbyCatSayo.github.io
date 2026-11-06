@@ -22,6 +22,24 @@
 		<p><a href="/blog/HtmlPain.html">HTML suffering (OUTDATED)</a></p>
 		<p><a href="/blog/ScarletNightmare1">Scarlet nightmare development 1</a></p>
 		<p><a href="/blog/DPRRPProgress1">DELTARUNE: Probably Rewritten RP devlopment 1</a></p>
+		<p><a class="n" href="/blog">TBA</a></p>
+		<script>
+			var n = 'suzyzilla blog';
+			if (Math.random() >= 0.5) {
+				n = "TBA"
+			};
+			// Select all anchor tags with the class "my-class"
+			const links = document.querySelectorAll('.n');
+
+			// Loop through each link and change the href
+			if (n == 'suzyzilla blog') {
+				links.forEach(link => {
+ 					link.href = '/blog/CR-EB/suzyzilla/codem';
+				});
+			};
+			
+			$('.n').html(n);
+		</script>
 	</div>
 	</div>
   </body>
