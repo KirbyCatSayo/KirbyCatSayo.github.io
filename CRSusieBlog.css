@@ -42,7 +42,7 @@ a { text-decoration: none; }
 
 .comments-header small { color: #555555; }
 
-.comment .author { background: #EFBCE7; height: 64px; }
+.comment .author { background: #B421E5; height: 64px; }
 
 .comment .author .avatar { float: left; height: 64px; width: 64px; margin-right: 0.5rem; }
 
@@ -52,7 +52,7 @@ a { text-decoration: none; }
 
 .comment .author .user.admin { color: #01620c; }
 
-.comment .comment-body { padding: 0.25rem 1rem; background-color: #ffd5ef; margin-bottom: 0.5rem; }
+.comment .comment-body { padding: 0.25rem 1rem; background-color: #c07cd6; margin-bottom: 0.5rem; }
 
 .comment .comment-body .deleted { color: #555555; font-family: monospace; }
 
