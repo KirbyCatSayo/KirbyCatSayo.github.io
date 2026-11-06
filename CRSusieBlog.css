@@ -58,7 +58,7 @@ a { text-decoration: none; }
 
 .comment .comment-body .mod { color: #01620c; font-weight: bold; font-family: monospace; }
 
-.alert { color: #01620c; background-color: #FFA9A9; font-size: 16px; font-family: monospace; font-weight: bold; padding: 1rem; margin-bottom: 0.5rem; }
+.alert { color: #d14b4b; background-color: #FFA9A9; font-size: 16px; font-family: monospace; font-weight: bold; padding: 1rem; margin-bottom: 0.5rem; }
 
 .alert img { float: left; height: 20px; margin-right: 0.5rem; }
 
