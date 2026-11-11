@@ -26,7 +26,7 @@ body {
   justify-items: left;
   text-align: left;
   background-image: linear-gradient(black, white);
-  background-image: url("/img/SnowfallBG.png"); background-color: #ffd5ef;
+  background-image: url("/img/bg-tree.png"); background-color: #ffd5ef;
 
   /* Forces the image width and height to be exactly 100% of the screen */
   /*background-size: 100% 100%;
